@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27130.2010
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Alloy", "Alloy.csproj", "{FEF77EC7-0E27-41BB-9FB3-081EE901C6F2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Alloy", "Alloy.csproj", "{EA3BBCBE-9B86-484E-9739-99E6524756D4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{FEF77EC7-0E27-41BB-9FB3-081EE901C6F2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{FEF77EC7-0E27-41BB-9FB3-081EE901C6F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{FEF77EC7-0E27-41BB-9FB3-081EE901C6F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{FEF77EC7-0E27-41BB-9FB3-081EE901C6F2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EA3BBCBE-9B86-484E-9739-99E6524756D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA3BBCBE-9B86-484E-9739-99E6524756D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA3BBCBE-9B86-484E-9739-99E6524756D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA3BBCBE-9B86-484E-9739-99E6524756D4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {9FAD8222-713B-490B-8A39-C89870C36DFC}
+		SolutionGuid = {A79C374C-6B89-4739-ACBF-D6E81230C242}
 	EndGlobalSection
 EndGlobal

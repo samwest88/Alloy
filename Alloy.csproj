@@ -7,7 +7,7 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{FEF77EC7-0E27-41BB-9FB3-081EE901C6F2}</ProjectGuid>
+    <ProjectGuid>{EA3BBCBE-9B86-484E-9739-99E6524756D4}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
@@ -15,7 +15,7 @@
     <AssemblyName>Alloy</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <MvcBuildViews>true</MvcBuildViews>
-    <UseIISExpress>true</UseIISExpress>
+    <UseIISExpress>false</UseIISExpress>
     <FileUpgradeFlags>
     </FileUpgradeFlags>
     <OldToolsVersion>4.0</OldToolsVersion>
@@ -26,6 +26,7 @@
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
     <UseGlobalApplicationHostFile />
+    <WebGreaseLibPath>packages\WebGrease.1.5.2\lib</WebGreaseLibPath>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -45,8 +46,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Antlr3.Runtime, Version=3.5.0.2, Culture=neutral, PublicKeyToken=eb42632606e9261f, processorArchitecture=MSIL">
-      <HintPath>packages\Antlr.3.5.0.2\lib\Antlr3.Runtime.dll</HintPath>
+    <Reference Include="Antlr3.Runtime, Version=3.4.1.9004, Culture=neutral, PublicKeyToken=eb42632606e9261f, processorArchitecture=MSIL">
+      <HintPath>packages\Antlr.3.4.1.9004\lib\Antlr3.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Castle.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL">
       <HintPath>packages\Castle.Core.4.2.1\lib\net45\Castle.Core.dll</HintPath>
@@ -55,10 +56,10 @@
       <HintPath>packages\Castle.Windsor.4.1.0\lib\net45\Castle.Windsor.dll</HintPath>
     </Reference>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
-      <HintPath>packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+      <HintPath>packages\EntityFramework.6.1.0\lib\net45\EntityFramework.dll</HintPath>
     </Reference>
     <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
-      <HintPath>packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <HintPath>packages\EntityFramework.6.1.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
     <Reference Include="EPiServer, Version=11.3.0.0, Culture=neutral, PublicKeyToken=8fe83dea738b45b7, processorArchitecture=MSIL">
       <HintPath>packages\EPiServer.CMS.Core.11.3.0\lib\net461\EPiServer.dll</HintPath>
@@ -69,14 +70,14 @@
     <Reference Include="EPiServer.Cms.AspNet, Version=11.3.0.0, Culture=neutral, PublicKeyToken=8fe83dea738b45b7, processorArchitecture=MSIL">
       <HintPath>packages\EPiServer.CMS.AspNet.11.3.0\lib\net461\EPiServer.Cms.AspNet.dll</HintPath>
     </Reference>
-    <Reference Include="EPiServer.Cms.Shell.UI, Version=11.2.0.0, Culture=neutral, PublicKeyToken=8fe83dea738b45b7, processorArchitecture=MSIL">
-      <HintPath>packages\EPiServer.CMS.UI.Core.11.2.0\lib\net461\EPiServer.Cms.Shell.UI.dll</HintPath>
+    <Reference Include="EPiServer.Cms.Shell.UI, Version=11.1.1.0, Culture=neutral, PublicKeyToken=8fe83dea738b45b7, processorArchitecture=MSIL">
+      <HintPath>packages\EPiServer.CMS.UI.Core.11.1.1\lib\net461\EPiServer.Cms.Shell.UI.dll</HintPath>
     </Reference>
     <Reference Include="EPiServer.Cms.TinyMce, Version=1.0.0.0, Culture=neutral, PublicKeyToken=8fe83dea738b45b7, processorArchitecture=MSIL">
       <HintPath>packages\EPiServer.CMS.TinyMce.1.0.0\lib\net461\EPiServer.Cms.TinyMce.dll</HintPath>
     </Reference>
-    <Reference Include="EPiServer.Cms.UI.AspNetIdentity, Version=11.2.0.0, Culture=neutral, PublicKeyToken=8fe83dea738b45b7, processorArchitecture=MSIL">
-      <HintPath>packages\EPiServer.CMS.UI.AspNetIdentity.11.2.0\lib\net461\EPiServer.Cms.UI.AspNetIdentity.dll</HintPath>
+    <Reference Include="EPiServer.Cms.UI.AspNetIdentity, Version=11.1.1.0, Culture=neutral, PublicKeyToken=8fe83dea738b45b7, processorArchitecture=MSIL">
+      <HintPath>packages\EPiServer.CMS.UI.AspNetIdentity.11.1.1\lib\net461\EPiServer.Cms.UI.AspNetIdentity.dll</HintPath>
     </Reference>
     <Reference Include="EPiServer.Configuration, Version=11.3.0.0, Culture=neutral, PublicKeyToken=8fe83dea738b45b7, processorArchitecture=MSIL">
       <HintPath>packages\EPiServer.CMS.AspNet.11.3.0\lib\net461\EPiServer.Configuration.dll</HintPath>
@@ -120,14 +121,14 @@
     <Reference Include="EPiServer.ServiceLocation.StructureMap, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>packages\EPiServer.ServiceLocation.StructureMap.2.0.0\lib\net461\EPiServer.ServiceLocation.StructureMap.dll</HintPath>
     </Reference>
-    <Reference Include="EPiServer.Shell, Version=11.2.0.0, Culture=neutral, PublicKeyToken=8fe83dea738b45b7, processorArchitecture=MSIL">
-      <HintPath>packages\EPiServer.CMS.UI.Core.11.2.0\lib\net461\EPiServer.Shell.dll</HintPath>
+    <Reference Include="EPiServer.Shell, Version=11.1.1.0, Culture=neutral, PublicKeyToken=8fe83dea738b45b7, processorArchitecture=MSIL">
+      <HintPath>packages\EPiServer.CMS.UI.Core.11.1.1\lib\net461\EPiServer.Shell.dll</HintPath>
     </Reference>
-    <Reference Include="EPiServer.Shell.UI, Version=11.2.0.0, Culture=neutral, PublicKeyToken=8fe83dea738b45b7, processorArchitecture=MSIL">
-      <HintPath>packages\EPiServer.CMS.UI.Core.11.2.0\lib\net461\EPiServer.Shell.UI.dll</HintPath>
+    <Reference Include="EPiServer.Shell.UI, Version=11.1.1.0, Culture=neutral, PublicKeyToken=8fe83dea738b45b7, processorArchitecture=MSIL">
+      <HintPath>packages\EPiServer.CMS.UI.Core.11.1.1\lib\net461\EPiServer.Shell.UI.dll</HintPath>
     </Reference>
-    <Reference Include="EPiServer.UI, Version=11.2.0.0, Culture=neutral, PublicKeyToken=8fe83dea738b45b7, processorArchitecture=MSIL">
-      <HintPath>packages\EPiServer.CMS.UI.Core.11.2.0\lib\net461\EPiServer.UI.dll</HintPath>
+    <Reference Include="EPiServer.UI, Version=11.1.1.0, Culture=neutral, PublicKeyToken=8fe83dea738b45b7, processorArchitecture=MSIL">
+      <HintPath>packages\EPiServer.CMS.UI.Core.11.1.1\lib\net461\EPiServer.UI.dll</HintPath>
     </Reference>
     <Reference Include="EPiServer.Web.WebControls, Version=11.3.0.0, Culture=neutral, PublicKeyToken=8fe83dea738b45b7, processorArchitecture=MSIL">
       <HintPath>packages\EPiServer.CMS.AspNet.11.3.0\lib\net461\EPiServer.Web.WebControls.dll</HintPath>
@@ -151,20 +152,20 @@
       <HintPath>packages\Microsoft.AspNet.Identity.Owin.2.2.1\lib\net45\Microsoft.AspNet.Identity.Owin.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
-    <Reference Include="Microsoft.Owin, Version=3.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>packages\Microsoft.Owin.3.1.0\lib\net45\Microsoft.Owin.dll</HintPath>
+    <Reference Include="Microsoft.Owin, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Owin.3.0.1\lib\net45\Microsoft.Owin.dll</HintPath>
     </Reference>
-    <Reference Include="Microsoft.Owin.Host.SystemWeb, Version=3.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>packages\Microsoft.Owin.Host.SystemWeb.3.1.0\lib\net45\Microsoft.Owin.Host.SystemWeb.dll</HintPath>
+    <Reference Include="Microsoft.Owin.Host.SystemWeb, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Owin.Host.SystemWeb.3.0.1\lib\net45\Microsoft.Owin.Host.SystemWeb.dll</HintPath>
     </Reference>
-    <Reference Include="Microsoft.Owin.Security, Version=3.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>packages\Microsoft.Owin.Security.3.1.0\lib\net45\Microsoft.Owin.Security.dll</HintPath>
+    <Reference Include="Microsoft.Owin.Security, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Owin.Security.3.0.0\lib\net45\Microsoft.Owin.Security.dll</HintPath>
     </Reference>
-    <Reference Include="Microsoft.Owin.Security.Cookies, Version=3.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>packages\Microsoft.Owin.Security.Cookies.3.1.0\lib\net45\Microsoft.Owin.Security.Cookies.dll</HintPath>
+    <Reference Include="Microsoft.Owin.Security.Cookies, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Owin.Security.Cookies.3.0.0\lib\net45\Microsoft.Owin.Security.Cookies.dll</HintPath>
     </Reference>
-    <Reference Include="Microsoft.Owin.Security.OAuth, Version=3.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>packages\Microsoft.Owin.Security.OAuth.3.1.0\lib\net45\Microsoft.Owin.Security.OAuth.dll</HintPath>
+    <Reference Include="Microsoft.Owin.Security.OAuth, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Owin.Security.OAuth.3.0.0\lib\net45\Microsoft.Owin.Security.OAuth.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
@@ -175,33 +176,33 @@
     <Reference Include="Owin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=f0ebd12fd5e55cc5, processorArchitecture=MSIL">
       <HintPath>packages\Owin.1.0\lib\net40\Owin.dll</HintPath>
     </Reference>
-    <Reference Include="StructureMap, Version=4.5.3.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>packages\StructureMap.4.5.3\lib\net45\StructureMap.dll</HintPath>
+    <Reference Include="StructureMap, Version=4.5.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\StructureMap.4.5.2\lib\net45\StructureMap.dll</HintPath>
     </Reference>
     <Reference Include="StructureMap.Web, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>packages\structuremap.web.4.0.0.315\lib\net40\StructureMap.Web.dll</HintPath>
     </Reference>
     <Reference Include="System.ComponentModel.Annotations, Version=4.2.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
-      <HintPath>packages\System.ComponentModel.Annotations.4.4.1\lib\net461\System.ComponentModel.Annotations.dll</HintPath>
+      <HintPath>packages\System.ComponentModel.Annotations.4.4.0\lib\net461\System.ComponentModel.Annotations.dll</HintPath>
     </Reference>
     <Reference Include="System.Data.OracleClient" />
-    <Reference Include="System.Data.SqlClient, Version=4.2.0.1, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
-      <HintPath>packages\System.Data.SqlClient.4.4.2\lib\net461\System.Data.SqlClient.dll</HintPath>
+    <Reference Include="System.Data.SqlClient, Version=4.2.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Data.SqlClient.4.4.0\lib\net461\System.Data.SqlClient.dll</HintPath>
     </Reference>
     <Reference Include="System.Net" />
     <Reference Include="System.Runtime.Remoting" />
     <Reference Include="System.Security" />
     <Reference Include="System.Security.AccessControl, Version=4.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
-      <HintPath>packages\System.Security.AccessControl.4.4.1\lib\net461\System.Security.AccessControl.dll</HintPath>
+      <HintPath>packages\System.Security.AccessControl.4.4.0\lib\net461\System.Security.AccessControl.dll</HintPath>
     </Reference>
     <Reference Include="System.Security.Cryptography.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
-      <HintPath>packages\System.Security.Cryptography.Xml.4.4.1\lib\net461\System.Security.Cryptography.Xml.dll</HintPath>
+      <HintPath>packages\System.Security.Cryptography.Xml.4.4.0\lib\net461\System.Security.Cryptography.Xml.dll</HintPath>
     </Reference>
     <Reference Include="System.Security.Permissions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
-      <HintPath>packages\System.Security.Permissions.4.4.1\lib\net461\System.Security.Permissions.dll</HintPath>
+      <HintPath>packages\System.Security.Permissions.4.4.0\lib\net461\System.Security.Permissions.dll</HintPath>
     </Reference>
     <Reference Include="System.Security.Principal.Windows, Version=4.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
-      <HintPath>packages\System.Security.Principal.Windows.4.4.1\lib\net461\System.Security.Principal.Windows.dll</HintPath>
+      <HintPath>packages\System.Security.Principal.Windows.4.4.0\lib\net461\System.Security.Principal.Windows.dll</HintPath>
     </Reference>
     <Reference Include="System.Threading.AccessControl, Version=4.0.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>packages\System.Threading.AccessControl.4.4.0\lib\net461\System.Threading.AccessControl.dll</HintPath>
@@ -253,8 +254,8 @@
     <Reference Include="System.Configuration" />
     <Reference Include="System.Web.Services" />
     <Reference Include="System.EnterpriseServices" />
-    <Reference Include="WebGrease, Version=1.6.5135.21930, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>packages\WebGrease.1.6.0\lib\WebGrease.dll</HintPath>
+    <Reference Include="WebGrease, Version=1.5.2.14234, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\WebGrease.1.5.2\lib\WebGrease.dll</HintPath>
     </Reference>
   </ItemGroup>
   <PropertyGroup>
@@ -408,18 +409,20 @@
     <Content Include="Static\jwplayer\video.mp4" />
     <Content Include="Views\Web.config" />
     <Content Include="Global.asax" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="App_Data\GeoLiteCity.dat" />
     <Content Include="App_Data\DefaultSiteContent.episerverdata" />
     <None Include="EPiServerLog.config" />
     <Content Include="modules\_protected\EPiServer.Cms.TinyMce\web.config" />
     <Content Include="modules\_protected\EPiServer.Cms.TinyMce\EPiServer.Cms.TinyMce.zip" />
-    <Content Include="modules\_protected\EPiServer.Search.Cms\module.config" />
-    <Content Include="module.config" />
     <Content Include="modules\_protected\Shell\web.config" />
     <Content Include="modules\_protected\Shell\Shell.zip" />
     <Content Include="modules\_protected\CMS\web.config" />
     <Content Include="modules\_protected\CMS\CMS.zip" />
+    <Content Include="modules\_protected\EPiServer.Search.Cms\module.config" />
+    <Content Include="module.config" />
     <None Include="packages.config" />
     <Content Include="Views\SearchPage\Index.cshtml" />
     <Content Include="Views\_viewstart.cshtml" />
@@ -475,7 +478,7 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>0</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:50134/</IISUrl>
+          <IISUrl>http://local.alloy.com</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>
